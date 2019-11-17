@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/searchItem"
+        android:icon="@drawable/ic_people_outline_black_24dp"
+        android:title="Friends"/>
+    <item
+        android:id="@+id/cameraItem"
+        android:icon="@drawable/ic_chat_bubble_outline_black_24dp"
+        android:title="Chat"/>
+    <item
+        android:id="@+id/callItem"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"/>
+
+</menu>

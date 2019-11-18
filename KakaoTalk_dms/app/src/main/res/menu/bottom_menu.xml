@@ -2,16 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/searchItem"
+        android:id="@+id/friends"
         android:icon="@drawable/ic_people_outline_black_24dp"
         android:title="Friends"/>
     <item
-        android:id="@+id/cameraItem"
+        android:id="@+id/chat"
         android:icon="@drawable/ic_chat_bubble_outline_black_24dp"
         android:title="Chat"/>
     <item
-        android:id="@+id/callItem"
-        android:icon="@drawable/ic_search_black_24dp"
-        android:title="Search"/>
+        android:id="@+id/account"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="Account"/>
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Setting"/>
 
 </menu>

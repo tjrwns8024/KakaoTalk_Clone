@@ -10,9 +10,9 @@
         android:icon="@drawable/ic_chat_bubble_outline_black_24dp"
         android:title="Chat"/>
     <item
-        android:id="@+id/account"
+        android:id="@+id/profile"
         android:icon="@drawable/ic_account_circle_black_24dp"
-        android:title="Account"/>
+        android:title="Profile"/>
     <item
         android:id="@+id/setting"
         android:icon="@drawable/ic_settings_black_24dp"

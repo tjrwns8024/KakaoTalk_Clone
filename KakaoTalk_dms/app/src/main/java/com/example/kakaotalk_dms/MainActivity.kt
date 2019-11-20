@@ -2,7 +2,13 @@ package com.example.kakaotalk_dms
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.FragmentTransaction
+import com.example.kakaotalk_dms.MainFragments.ChatFragments
+import com.example.kakaotalk_dms.MainFragments.FriendsFragments
+import com.example.kakaotalk_dms.MainFragments.ProfileFragments
+import com.example.kakaotalk_dms.MainFragments.SettingFragments
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -11,5 +17,40 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        supportFragmentManager.beginTransaction().run {
+            replace(R.id.main_frame, FriendsFragments())
+            commit()
+        }
+
+        main_menu.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+
     }
+
+    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
+        val transaction = supportFragmentManager.beginTransaction()
+        when(item.itemId){
+            R.id.friends->{
+                transaction.replace(R.id.main_frame,FriendsFragments())
+                transaction.commit()
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.chat->{
+                transaction.replace(R.id.main_frame,ChatFragments())
+                transaction.commit()
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.profile->{
+                transaction.replace(R.id.main_frame,ProfileFragments())
+                transaction.commit()
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.setting->{
+                transaction.replace(R.id.main_frame,SettingFragments())
+                transaction.commit()
+                return@OnNavigationItemSelectedListener true
+            }
+        }
+            false
+        }
+
 }

@@ -4,7 +4,6 @@
     android:id="@+id/profilefragments"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainFragments.ProfileFragments"
-    android:background="#00BCD4">
+    tools:context=".MainFragments.ProfileFragments">
 
 </FrameLayout>

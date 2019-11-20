@@ -4,8 +4,7 @@
     android:id="@+id/friendsfragments"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainFragments.FriendsFragments"
-    android:background="#fff222">
+    tools:context=".MainFragments.FriendsFragments">
 
 
 </FrameLayout>

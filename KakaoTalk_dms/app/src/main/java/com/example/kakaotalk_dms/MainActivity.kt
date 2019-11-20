@@ -17,6 +17,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        setSupportActionBar(toolbar)
+        toolbar.title = "친구"
+
         supportFragmentManager.beginTransaction().run {
             replace(R.id.main_frame, FriendsFragments())
             commit()
@@ -30,21 +33,25 @@ class MainActivity : AppCompatActivity() {
         val transaction = supportFragmentManager.beginTransaction()
         when(item.itemId){
             R.id.friends->{
+                toolbar.setTitle(" 친구")
                 transaction.replace(R.id.main_frame,FriendsFragments())
                 transaction.commit()
                 return@OnNavigationItemSelectedListener true
             }
             R.id.chat->{
+                toolbar.setTitle("채팅")
                 transaction.replace(R.id.main_frame,ChatFragments())
                 transaction.commit()
                 return@OnNavigationItemSelectedListener true
             }
             R.id.profile->{
+                toolbar.setTitle("계정")
                 transaction.replace(R.id.main_frame,ProfileFragments())
                 transaction.commit()
                 return@OnNavigationItemSelectedListener true
             }
             R.id.setting->{
+                toolbar.setTitle("설정")
                 transaction.replace(R.id.main_frame,SettingFragments())
                 transaction.commit()
                 return@OnNavigationItemSelectedListener true

@@ -4,9 +4,7 @@
     android:id="@+id/chatfragments"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainFragments.ChatFragments"
-    android:background="#FF22ff">
-
+    tools:context=".MainFragments.ChatFragments">
 
 
 </FrameLayout>

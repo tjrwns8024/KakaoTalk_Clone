@@ -1,8 +1,9 @@
-package com.example.kakaotalk_dms
+package com.example.kakaotalk_dms.Ui.Activities
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.kakaotalk_dms.MainActivity
 import java.lang.Exception
 
 class SplashActivity:AppCompatActivity() {
@@ -11,7 +12,7 @@ class SplashActivity:AppCompatActivity() {
 
         try {
             Thread.sleep(3000)
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }

@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Signup"></activity>
-        <activity android:name=".Signin" />
+        <activity android:name=".Ui.Activities.Signup"></activity>
+        <activity android:name=".Ui.Activities.Signin" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".Ui.Activities.SplashActivity"
             android:theme="@style/IntroTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,7 +1,5 @@
-package com.example.kakaotalk_dms.MainFragments
+package com.example.kakaotalk_dms.Ui.MainFragments
 
-import android.content.Context
-import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater

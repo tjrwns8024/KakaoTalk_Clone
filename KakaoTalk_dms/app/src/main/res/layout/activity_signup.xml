@@ -44,7 +44,9 @@
                     android:id="@+id/signup_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="id"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="email"
                     android:inputType="textEmailAddress" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -62,6 +64,8 @@
                     android:id="@+id/signup_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:hint="password" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -91,6 +95,8 @@
                     android:id="@+id/password_check"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:hint="password check" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -107,6 +113,8 @@
                     android:id="@+id/signup_nick"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:hint="nick" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -123,6 +131,8 @@
                     android:id="@+id/check_code"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:hint="confirm code" />
             </com.google.android.material.textfield.TextInputLayout>
 

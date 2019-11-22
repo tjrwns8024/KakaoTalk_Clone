@@ -35,4 +35,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.google.android.material:material:1.0.0'
     implementation "org.jetbrains.anko:anko:$anko_version"
+    implementation 'com.makeramen:roundedimageview:2.3.0'
 }

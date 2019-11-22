@@ -1,11 +1,12 @@
-package com.example.kakaotalk_dms
+package com.example.kakaotalk_dms.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.kakaotalk_dms.Ui.MainFragments.ChatFragments
-import com.example.kakaotalk_dms.Ui.MainFragments.FriendsFragments
-import com.example.kakaotalk_dms.Ui.MainFragments.ProfileFragments
-import com.example.kakaotalk_dms.Ui.MainFragments.SettingFragments
+import com.example.kakaotalk_dms.R
+import com.example.kakaotalk_dms.ui.fragment.ChatFragment
+import com.example.kakaotalk_dms.ui.fragment.FriendFragment
+import com.example.kakaotalk_dms.ui.fragment.ProfileFragment
+import com.example.kakaotalk_dms.ui.fragment.SettingFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         toolbar.title = "친구"
 
         supportFragmentManager.beginTransaction().run {
-            replace(R.id.main_frame, FriendsFragments())
+            replace(R.id.main_frame, FriendFragment())
             commit()
         }
 
@@ -30,34 +31,38 @@ class MainActivity : AppCompatActivity() {
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         val transaction = supportFragmentManager.beginTransaction()
         when(item.itemId){
-            R.id.friends->{
+            R.id.friends ->{
                 toolbar.setTitle(" 친구")
-                transaction.replace(R.id.main_frame,
-                    FriendsFragments()
+                transaction.replace(
+                    R.id.main_frame,
+                    FriendFragment()
                 )
                 transaction.commit()
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.chat->{
+            R.id.chat ->{
                 toolbar.setTitle("채팅")
-                transaction.replace(R.id.main_frame,
-                    ChatFragments()
+                transaction.replace(
+                    R.id.main_frame,
+                    ChatFragment()
                 )
                 transaction.commit()
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.profile->{
+            R.id.profile ->{
                 toolbar.setTitle("계정")
-                transaction.replace(R.id.main_frame,
-                    ProfileFragments()
+                transaction.replace(
+                    R.id.main_frame,
+                    ProfileFragment()
                 )
                 transaction.commit()
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.setting->{
+            R.id.setting ->{
                 toolbar.setTitle("설정")
-                transaction.replace(R.id.main_frame,
-                    SettingFragments()
+                transaction.replace(
+                    R.id.main_frame,
+                    SettingFragment()
                 )
                 transaction.commit()
                 return@OnNavigationItemSelectedListener true

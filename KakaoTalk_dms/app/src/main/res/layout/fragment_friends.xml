@@ -4,11 +4,12 @@
     android:id="@+id/friendsfragments"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ui.MainFragments.FriendsFragments">
+    tools:context=".ui.fragment.FriendFragment">
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/friendsRecycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/friends_list_item"/>
+        tools:listitem="@layout/item_friend"/>
 </FrameLayout>

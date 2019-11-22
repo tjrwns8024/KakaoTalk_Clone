@@ -1,9 +1,8 @@
-package com.example.kakaotalk_dms.Ui.Activities
+package com.example.kakaotalk_dms.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.kakaotalk_dms.MainActivity
 import java.lang.Exception
 
 class SplashActivity:AppCompatActivity() {

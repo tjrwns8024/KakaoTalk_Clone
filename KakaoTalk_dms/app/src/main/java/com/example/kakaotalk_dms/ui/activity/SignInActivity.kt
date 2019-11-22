@@ -1,10 +1,10 @@
-package com.example.kakaotalk_dms.Ui.Activities
+package com.example.kakaotalk_dms.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.kakaotalk_dms.R
 
-class Signin : AppCompatActivity() {
+class SignInActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -1,16 +1,14 @@
 package com.example.kakaotalk_dms.ui.fragment
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.kakaotalk_dms.ui.adapter.FriendsAdapter
-import com.example.kakaotalk_dms.model.User
-
 import com.example.kakaotalk_dms.R
+import com.example.kakaotalk_dms.model.User
+import com.example.kakaotalk_dms.ui.adapter.FriendsAdapter
 import kotlinx.android.synthetic.main.fragment_friends.*
+import org.jetbrains.anko.toast
 
 class FriendFragment : Fragment() {
 
@@ -41,4 +39,5 @@ class FriendFragment : Fragment() {
         friendAdapter.add(User("b","a","ㅛㅇ"))
 
     }
+
 }

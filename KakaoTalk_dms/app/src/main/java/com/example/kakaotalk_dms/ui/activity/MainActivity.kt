@@ -2,6 +2,8 @@ package com.example.kakaotalk_dms.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import com.example.kakaotalk_dms.R
 import com.example.kakaotalk_dms.ui.fragment.ChatFragment
 import com.example.kakaotalk_dms.ui.fragment.FriendFragment
@@ -9,6 +11,7 @@ import com.example.kakaotalk_dms.ui.fragment.ProfileFragment
 import com.example.kakaotalk_dms.ui.fragment.SettingFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
+import org.jetbrains.anko.toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,6 +30,23 @@ class MainActivity : AppCompatActivity() {
         main_menu.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
     }
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.toolbar_menu,menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item:MenuItem): Boolean {
+        when(item.itemId){
+            R.id.id_search->{
+                toast("아이디 검색")
+            }
+            R.id.friend_search->{
+                toast("친구 찾기")
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         val transaction = supportFragmentManager.beginTransaction()

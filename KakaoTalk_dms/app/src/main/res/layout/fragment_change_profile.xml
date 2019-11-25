@@ -21,9 +21,9 @@
                 android:id="@+id/profile_backimage"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:alpha="0.8"
+                android:alpha="0.7"
                 android:background="@drawable/splashimage"
-                app:layout_constraintBottom_toTopOf="@+id/roundedImageView"
+                app:layout_constraintBottom_toTopOf="@+id/profile_image"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +31,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <com.makeramen.roundedimageview.RoundedImageView
-                android:id="@+id/roundedImageView"
+                android:id="@+id/profile_image"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:src="@drawable/ic_people_outline_black_24dp"
@@ -67,14 +67,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.18" />
+                app:layout_constraintGuide_percent="0.2" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline82"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.82" />
+                app:layout_constraintGuide_percent="0.8" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline83"
@@ -121,7 +121,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.65" />
+                app:layout_constraintGuide_percent="0.62" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -131,7 +131,7 @@
                 android:text="나와의 채팅"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/guideline55"
-                app:layout_constraintStart_toStartOf="@+id/guideline52" />
+                app:layout_constraintStart_toStartOf="@+id/guideline81" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline90"
@@ -147,8 +147,9 @@
                 android:gravity="center"
                 android:text="프로필 수정"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/guideline84"
-                app:layout_constraintStart_toStartOf="@+id/guideline64" />
+                app:layout_constraintEnd_toStartOf="@+id/guideline82"
+                app:layout_constraintStart_toStartOf="@+id/guideline64"
+                app:layout_constraintTop_toTopOf="@+id/guideline90" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline91"
@@ -200,7 +201,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.59" />
+                app:layout_constraintGuide_percent="0.62" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline84"
@@ -213,11 +214,11 @@
                 android:id="@+id/profile_message"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:textSize="20sp"
                 android:gravity="center"
-                android:textColor="#ffffff"
-                android:textStyle="bold"
                 android:text="상태메세지를 입력합시다아ㅏ아아아아아"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/guideline57"
                 app:layout_constraintEnd_toStartOf="@+id/guideline82"
                 app:layout_constraintStart_toStartOf="@+id/guideline81"
@@ -231,7 +232,7 @@
                 app:layout_constraintGuide_begin="189dp" />
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/chat_image_btn"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="@drawable/imagebutton_radious"
@@ -239,7 +240,18 @@
                 app:layout_constraintEnd_toStartOf="@+id/guideline55"
                 app:layout_constraintStart_toStartOf="@+id/guideline81"
                 app:layout_constraintTop_toTopOf="@+id/guideline87"
-                app:srcCompat="@drawable/chat" />
+                app:srcCompat="@drawable/ic_chat_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/setting_image_btn"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/imagebutton_radious"
+                app:layout_constraintBottom_toTopOf="@+id/guideline90"
+                app:layout_constraintEnd_toStartOf="@+id/guideline82"
+                app:layout_constraintStart_toStartOf="@+id/guideline64"
+                app:layout_constraintTop_toTopOf="@+id/guideline87"
+                app:srcCompat="@drawable/ic_settings_black_24dp" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

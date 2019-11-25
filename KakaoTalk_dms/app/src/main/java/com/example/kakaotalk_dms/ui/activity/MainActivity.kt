@@ -1,9 +1,12 @@
 package com.example.kakaotalk_dms.ui.activity
 
+import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ImageView
+import androidx.core.graphics.alpha
 import com.example.kakaotalk_dms.R
 import com.example.kakaotalk_dms.ui.fragment.ChatFragment
 import com.example.kakaotalk_dms.ui.fragment.FriendFragment

@@ -1,6 +1,5 @@
 package com.example.kakaotalk_dms.ui.adapter
 
-import android.graphics.drawable.GradientDrawable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,9 +8,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kakaotalk_dms.R
 import com.example.kakaotalk_dms.model.User
-import org.w3c.dom.Text
 
-class FriendsAdapter : RecyclerView.Adapter<FriendsAdapter.Holder>() {
+class FriendAdapter : RecyclerView.Adapter<FriendAdapter.Holder>() {
 
     private val userList = ArrayList<User>()
 

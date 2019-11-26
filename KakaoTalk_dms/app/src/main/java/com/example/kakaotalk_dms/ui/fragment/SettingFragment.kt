@@ -38,6 +38,11 @@ class SettingFragment : Fragment() {
             transaction?.replace(R.id.main_frame,ChangeIdFragment())
             transaction?.commit()
         }
+        ban_list.setOnClickListener{
+            val transaction = activity?.supportFragmentManager?.beginTransaction()?.setCustomAnimations(R.anim.fade_in,R.anim.fade_out)
+            transaction?.replace(R.id.main_frame,BanFragment())
+            transaction?.commit()
+        }
     }
 }
 

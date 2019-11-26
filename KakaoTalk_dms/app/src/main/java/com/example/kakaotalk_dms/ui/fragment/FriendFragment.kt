@@ -6,9 +6,8 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.kakaotalk_dms.R
 import com.example.kakaotalk_dms.model.User
-import com.example.kakaotalk_dms.ui.adapter.FriendsAdapter
+import com.example.kakaotalk_dms.ui.adapter.FriendAdapter
 import kotlinx.android.synthetic.main.fragment_friends.*
-import org.jetbrains.anko.toast
 
 class FriendFragment : Fragment() {
 
@@ -21,7 +20,7 @@ class FriendFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val friendAdapter = FriendsAdapter()
+        val friendAdapter = FriendAdapter()
         friendsRecycler.adapter = friendAdapter
 
         val lm = LinearLayoutManager(this.context!!)

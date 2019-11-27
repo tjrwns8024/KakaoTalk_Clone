@@ -21,18 +21,19 @@
         android:id="@+id/friends_image"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/kakaotalk_logo"
+        android:src="@mipmap/ic_launcher"
         app:layout_constraintBottom_toTopOf="@+id/guideline27"
         app:layout_constraintEnd_toStartOf="@+id/guideline21"
         app:layout_constraintStart_toStartOf="@+id/guideline10"
         app:layout_constraintTop_toTopOf="@+id/guideline40"
-        app:riv_corner_radius="7dp" />
+        app:riv_corner_radius="6dp" />
 
     <TextView
         android:id="@+id/state_message"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="상태 메세지"
+        android:gravity="right"
         app:layout_constraintBottom_toTopOf="@+id/guideline41"
         app:layout_constraintEnd_toStartOf="@+id/guideline43"
         app:layout_constraintStart_toStartOf="@+id/guideline36"

@@ -40,7 +40,7 @@ class FriendAdapter : RecyclerView.Adapter<FriendAdapter.Holder>() {
             if (data.image != "")
                 friendsImage?.setImageResource(R.drawable.kakaotalk_logo)
             else
-                friendsImage?.setImageResource(R.mipmap.ic_launcher_round)
+                friendsImage?.setImageResource(R.mipmap.ic_launcher)
 
             nick?.text = data.nick
             message?.text = data.message

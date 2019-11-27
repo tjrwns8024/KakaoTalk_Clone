@@ -1,16 +1,12 @@
 package com.example.kakaotalk_dms.ui.activity
 
-import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.ImageView
-import androidx.core.graphics.alpha
 import com.example.kakaotalk_dms.R
 import com.example.kakaotalk_dms.ui.fragment.ChatFragment
 import com.example.kakaotalk_dms.ui.fragment.FriendFragment
-import com.example.kakaotalk_dms.ui.fragment.ProfileFragment
 import com.example.kakaotalk_dms.ui.fragment.SettingFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -68,12 +64,6 @@ class MainActivity : AppCompatActivity() {
                 transaction.replace(
                     R.id.main_frame,
                     ChatFragment()
-                )
-                transaction.commit()
-                return@OnNavigationItemSelectedListener true
-            }
-                    R.id.main_frame,
-                    ProfileFragment()
                 )
                 transaction.commit()
                 return@OnNavigationItemSelectedListener true

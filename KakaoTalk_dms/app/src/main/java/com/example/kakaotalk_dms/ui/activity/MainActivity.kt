@@ -72,9 +72,6 @@ class MainActivity : AppCompatActivity() {
                 transaction.commit()
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.profile ->{
-                toolbar.setTitle("계정")
-                transaction.replace(
                     R.id.main_frame,
                     ProfileFragment()
                 )

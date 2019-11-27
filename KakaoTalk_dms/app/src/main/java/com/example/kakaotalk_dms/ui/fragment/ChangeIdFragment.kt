@@ -30,18 +30,8 @@ class ChangeIdFragment : Fragment() {
        }
 
         change_id_btn.setOnClickListener {
-            val builder = AlertDialog.Builder(this.context!!)
-            val dialogView = layoutInflater.inflate(R.layout.activity_dialog,null)
-            val newId = dialogView.findViewById<EditText>(R.id.new_id)
-
-            builder.setView(dialogView)
-                .setPositiveButton("ID 변경"){dialogInterface, i ->
-                    checkId.text = newId.text.toString()
-                }
-                .setNegativeButton("취소"){dialogInterface, i ->
-
-                }
-                .show()
+            val changeIdDialogFragment = ChangeIdDialogFragment.getInstance()
+            changeIdDialogFragment.show(activity!!.supportFragmentManager, ChangeIdDialogFragment.TAG_CHANGE_ID_DIALOG)
         }
     }
 }

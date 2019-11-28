@@ -11,7 +11,7 @@ class SplashActivity:AppCompatActivity() {
 
         try {
             Thread.sleep(3000)
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, SignInActivity::class.java)
             startActivity(intent)
             finish()
         }

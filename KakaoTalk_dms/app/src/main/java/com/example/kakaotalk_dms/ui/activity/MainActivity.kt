@@ -58,6 +58,7 @@ class MainActivity : AppCompatActivity() {
                         AccountFragment()
                     )
                     transaction.commit()
+                    return@OnNavigationItemSelectedListener true
                 }
                 R.id.setting -> {
                     transaction.replace(

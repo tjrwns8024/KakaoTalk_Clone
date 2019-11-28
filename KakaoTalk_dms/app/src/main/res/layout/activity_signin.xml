@@ -17,24 +17,27 @@
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="@+id/guideline8"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/kakaotalk_logo" />
+        app:srcCompat="@drawable/chicksoup" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/signin_idInputLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        app:hintEnabled="false"
         android:background="@drawable/edittext_radious"
         app:layout_constraintBottom_toTopOf="@+id/guideline20"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintHorizontal_bias="1.0"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/guideline6">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/signin_id"
             android:layout_width="match_parent"
-            android:layout_height="44dp"
+            android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
+            android:textCursorDrawable="@color/background"
             android:layout_marginRight="20dp"
             android:hint="id"
             android:inputType="textEmailAddress" />
@@ -44,6 +47,7 @@
         android:id="@+id/signin_passwordInputLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        app:hintEnabled="false"
         android:background="@drawable/edittext_radious"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
@@ -53,7 +57,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/signin_password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:hint="password"
@@ -66,7 +70,7 @@
         android:layout_height="0dp"
         android:background="@drawable/btn_radious"
         android:text="로그인"
-        android:textColor="#B49B9B"
+        android:textColor="#ffffff"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"

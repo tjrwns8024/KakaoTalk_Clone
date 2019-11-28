@@ -18,7 +18,7 @@ class ChangeProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        change_profile_back_btn.setOnClickListener {
+        change_profile_back.setOnClickListener {
             val transaction = activity?.supportFragmentManager?.beginTransaction()?.setCustomAnimations(R.anim.fade_in,R.anim.fade_out)
             transaction?.replace(R.id.main_frame,SettingFragment())
             transaction?.commit()

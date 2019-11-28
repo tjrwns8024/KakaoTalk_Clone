@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="noneSelect">#B3B0B0</color>
     <color name="Select">#464545</color>
+    <color name="background">#FEE100</color>
 </resources>

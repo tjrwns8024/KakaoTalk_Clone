@@ -134,7 +134,7 @@
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ID 확인 및 변경"
+                    android:text="ID 확인"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -350,7 +350,7 @@
             android:id="@+id/textView6"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:text="Chick Soup 설정"
+            android:text="Chick Soup Setting"
             android:textColor="#000000"
             android:textSize="30dp"
             android:textStyle="bold"
@@ -374,7 +374,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.13" />
+            app:layout_constraintGuide_percent="0.12" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline79"

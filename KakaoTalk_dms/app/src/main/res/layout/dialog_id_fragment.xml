@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Chick Shoup"
+            android:text="Chick Soup"
             android:textColor="#000000"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -48,7 +48,7 @@
             app:hintTextAppearance="@style/TextAppearance.AppCompat">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/newId_editText"
+                android:id="@+id/search_id_editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="새 아이디를 입력하세요"

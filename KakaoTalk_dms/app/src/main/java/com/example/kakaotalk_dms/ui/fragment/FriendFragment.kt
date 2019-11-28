@@ -37,6 +37,12 @@ class FriendFragment : Fragment() {
         friendAdapter.add(User("b","a","ㅗㅇ"))
         friendAdapter.add(User("b","a","ㅛㅇ"))
 
+        id_search.setOnClickListener {
+            val transaction = activity!!.supportFragmentManager.beginTransaction().setCustomAnimations(R.anim.slide_in_bottom,R.anim.fade_out)
+            transaction.replace(R.id.main_frame,SearchFriendFragment())
+            transaction.commit()
+        }
+
     }
 
 }

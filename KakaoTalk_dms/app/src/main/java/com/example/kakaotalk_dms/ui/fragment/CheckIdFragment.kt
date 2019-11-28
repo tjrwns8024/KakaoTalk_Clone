@@ -1,37 +1,31 @@
 package com.example.kakaotalk_dms.ui.fragment
 
-import android.app.AlertDialog
-import android.content.Context
-import android.net.Uri
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
-
+import androidx.fragment.app.Fragment
 import com.example.kakaotalk_dms.R
-import kotlinx.android.synthetic.main.fragment_change_id.*
-import kotlinx.android.synthetic.main.fragment_setting.*
+import kotlinx.android.synthetic.main.fragment_check_id.*
 
-class ChangeIdFragment : Fragment() {
+class CheckIdFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_change_id, container, false)
+        return inflater.inflate(R.layout.fragment_check_id, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-       change_id_back_btn.setOnClickListener {
+       check_id_back.setOnClickListener {
                val transaction = activity?.supportFragmentManager?.beginTransaction()?.setCustomAnimations(R.anim.fade_in,R.anim.fade_out)
                transaction?.replace(R.id.main_frame,SettingFragment())
                transaction?.commit()
        }
-
-        change_id_btn.setOnClickListener {
-            val changeIdDialogFragment = ChangeIdDialogFragment.getInstance()
-            changeIdDialogFragment.show(activity!!.supportFragmentManager, ChangeIdDialogFragment.TAG_CHANGE_ID_DIALOG)
-        }
+// Dialog
+//        change_id_btn.setOnClickListener {
+//            val changeIdDialogFragment = ChangeIdDialogFragment.getInstance()
+//            changeIdDialogFragment.show(activity!!.supportFragmentManager, ChangeIdDialogFragment.TAG_CHANGE_ID_DIALOG)
+//        }
     }
 }

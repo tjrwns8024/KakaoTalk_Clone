@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.ChangeIdFragment"
+    tools:context=".ui.fragment.CheckIdFragment"
     android:background="#FEE100">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -116,35 +116,6 @@
             app:layout_constraintTop_toTopOf="@+id/guideline102" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline103"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.62" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline104"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.7" />
-
-        <Button
-            android:id="@+id/change_id_btn"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:background="@drawable/btn_radious"
-            android:text="ID 변경"
-            android:textColor="#ffffff"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/guideline104"
-            app:layout_constraintEnd_toStartOf="@+id/guideline100"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="@+id/guideline99"
-            app:layout_constraintTop_toTopOf="@+id/guideline103" />
-
-        <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline105"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -173,7 +144,7 @@
             app:layout_constraintGuide_percent="0.12" />
 
         <ImageView
-            android:id="@+id/change_id_back_btn"
+            android:id="@+id/check_id_back"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/back"

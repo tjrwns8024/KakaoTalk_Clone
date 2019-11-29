@@ -16,7 +16,7 @@ class SignInActivity : AppCompatActivity() {
             startActivity<MainActivity>()
         }
         go_signup.setOnClickListener {
-            startActivity<SignUpActivity>()
+            startActivity<SignUp1Activity>()
         }
     }
 }

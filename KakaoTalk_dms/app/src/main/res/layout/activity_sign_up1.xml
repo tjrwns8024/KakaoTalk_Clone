@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFEB33"
-    tools:context=".ui.activity.SignUpActivity">
+    tools:context=".ui.activity.SignUp1Activity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -37,10 +37,10 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="#ffffff"
-                app:layout_constraintBottom_toTopOf="@+id/guideline31"
+                app:layout_constraintBottom_toTopOf="@+id/guideline28"
                 app:layout_constraintEnd_toStartOf="@+id/guideline25"
                 app:layout_constraintStart_toStartOf="@+id/guideline24"
-                app:layout_constraintTop_toTopOf="@+id/guideline30">
+                app:layout_constraintTop_toTopOf="@+id/guideline26">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/signup_id"
@@ -57,19 +57,19 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="#ffffff"
-                app:layout_constraintBottom_toTopOf="@+id/guideline35"
+                app:layout_constraintBottom_toTopOf="@+id/guideline33"
                 app:layout_constraintEnd_toStartOf="@+id/guideline29"
                 app:layout_constraintStart_toStartOf="@+id/guideline24"
-                app:layout_constraintTop_toTopOf="@+id/guideline34">
+                app:layout_constraintTop_toTopOf="@+id/guideline32">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/signup_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:hint="password" />
+                    android:hint="password"
+                    android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
@@ -80,29 +80,30 @@
                 android:text="확인"
                 android:textColor="#ffffff"
                 android:textSize="12sp"
-                app:layout_constraintBottom_toTopOf="@+id/guideline31"
+                app:layout_constraintBottom_toTopOf="@+id/guideline28"
                 app:layout_constraintEnd_toStartOf="@+id/guideline29"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/guideline25"
-                app:layout_constraintTop_toTopOf="@+id/guideline30"
-                app:layout_constraintVertical_bias="0.714" />
+                app:layout_constraintTop_toTopOf="@+id/guideline26"
+                app:layout_constraintVertical_bias="0.545" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/check_pw"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                app:layout_constraintBottom_toTopOf="@+id/guideline38"
+                app:layout_constraintBottom_toTopOf="@+id/guideline35"
                 app:layout_constraintEnd_toStartOf="@+id/guideline29"
                 app:layout_constraintStart_toStartOf="@+id/guideline24"
-                app:layout_constraintTop_toTopOf="@+id/guideline37">
+                app:layout_constraintTop_toTopOf="@+id/guideline34">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/password_check"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:inputType="textPassword"
                     android:layout_marginRight="10dp"
-                    android:hint="password check" />
+                    android:hint="password check"
+                    android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
@@ -110,7 +111,7 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="@drawable/bottom_radious"
-                android:text="SignUp"
+                android:text="Next"
                 android:textColor="#ffffff"
                 android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -137,14 +138,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.05" />
+                app:layout_constraintGuide_percent="0.08" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline28"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.19" />
+                app:layout_constraintGuide_percent="0.22" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline29"
@@ -158,90 +159,61 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.22" />
+                app:layout_constraintGuide_percent="0.28" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline47"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.87" />
+                app:layout_constraintGuide_percent="0.9" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline31"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.36" />
+                app:layout_constraintGuide_percent="0.42" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline32"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.39" />
+                app:layout_constraintGuide_percent="0.48" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline33"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.53" />
+                app:layout_constraintGuide_percent="0.62" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline34"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.56" />
+                app:layout_constraintGuide_percent="0.68" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline35"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.69" />
+                app:layout_constraintGuide_percent="0.82" />
 
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline37"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.73" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline38"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.85" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/nickInputLayout"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                app:layout_constraintBottom_toTopOf="@+id/guideline28"
-                app:layout_constraintEnd_toStartOf="@+id/guideline29"
-                app:layout_constraintStart_toStartOf="@+id/guideline24"
-                app:layout_constraintTop_toTopOf="@+id/guideline26">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/signup_nick"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:hint="nick" />
-            </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/codeTextInputLayout"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                app:layout_constraintBottom_toTopOf="@+id/guideline34"
+                app:layout_constraintBottom_toTopOf="@+id/guideline31"
                 app:layout_constraintEnd_toStartOf="@+id/guideline29"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/guideline24"
-                app:layout_constraintTop_toTopOf="@+id/guideline32">
+                app:layout_constraintTop_toTopOf="@+id/guideline30"
+                app:layout_constraintVertical_bias="0.0">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/check_code"
@@ -310,7 +282,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.93222684" />
+        app:layout_constraintGuide_percent="0.91" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

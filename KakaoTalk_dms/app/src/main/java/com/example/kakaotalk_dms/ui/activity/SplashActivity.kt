@@ -17,5 +17,6 @@ class SplashActivity : AppCompatActivity() {
         } catch (e: Exception) {
             return
         }
+
     }
 }

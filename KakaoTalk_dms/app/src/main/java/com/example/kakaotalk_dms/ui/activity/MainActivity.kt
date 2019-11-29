@@ -31,7 +31,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
     private val mOnNavigationItemSelectedListener =
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
             val transaction = supportFragmentManager.beginTransaction()
@@ -52,7 +51,7 @@ class MainActivity : AppCompatActivity() {
                     transaction.commit()
                     return@OnNavigationItemSelectedListener true
                 }
-                R.id.account->{
+                R.id.account -> {
                     transaction.replace(
                         R.id.main_frame,
                         AccountFragment()
